@@ -5,20 +5,20 @@
 class Intentra < Formula
   desc "Deterministic AI-powered commit planning engine"
   homepage "https://github.com/crvgilbertson/intentra"
-  version "0.5.4"
+  version "0.5.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/crvgilbertson/intentra/releases/download/v0.5.4/intentra_0.5.4_darwin_amd64.tar.gz"
-      sha256 "eff512ae0e849a7a4dfa603f72dc41835a8e994e09ebd6086fe48769ad60de96"
+      url "https://github.com/crvgilbertson/intentra/releases/download/v0.5.6/intentra_0.5.6_darwin_amd64.tar.gz"
+      sha256 "c2b9d3400998a3d2c155a8e5765e1e6d63580d063ce662721b5fd27a91f08af0"
 
       define_method(:install) do
         bin.install "intentra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/crvgilbertson/intentra/releases/download/v0.5.4/intentra_0.5.4_darwin_arm64.tar.gz"
-      sha256 "d47a35f0b4539e2b95ab567893df589e6493a3dece0be55abc55af8a8965c6c2"
+      url "https://github.com/crvgilbertson/intentra/releases/download/v0.5.6/intentra_0.5.6_darwin_arm64.tar.gz"
+      sha256 "8f3d7cd872e7ba1deed99e895d0013b406b28076907da9aefe438a155aecffbd"
 
       define_method(:install) do
         bin.install "intentra"
@@ -28,15 +28,15 @@ class Intentra < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crvgilbertson/intentra/releases/download/v0.5.4/intentra_0.5.4_linux_amd64.tar.gz"
-      sha256 "7dd2c15a93e858624233559a3a6ac0b4b5998b1ccda00eef26effc3dd2a30fda"
+      url "https://github.com/crvgilbertson/intentra/releases/download/v0.5.6/intentra_0.5.6_linux_amd64.tar.gz"
+      sha256 "b3c2342575550b314ff6e116c7b84deaa6507828ec862a19fb251a3df765ef17"
       define_method(:install) do
         bin.install "intentra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crvgilbertson/intentra/releases/download/v0.5.4/intentra_0.5.4_linux_arm64.tar.gz"
-      sha256 "0efbea70fd7f1593c8731bf3fddb2cdb5f9371337f96b6532d0d3546dcb94e3f"
+      url "https://github.com/crvgilbertson/intentra/releases/download/v0.5.6/intentra_0.5.6_linux_arm64.tar.gz"
+      sha256 "a92956d791e97ab4289daac450da931bc9c442ca9a805815eae1f8712a3ac994"
       define_method(:install) do
         bin.install "intentra"
       end
